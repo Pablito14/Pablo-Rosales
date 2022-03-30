@@ -1,4 +1,9 @@
-root{
+:root{
+--primary-c: #1C3544;
+--secondary-c: #6F96A3;
+--tertiary-c: #414A4D;
+--quaternary-c: #1A2633;
+--quinary-c: #4C808F;
 
 }
 
@@ -7,5 +12,64 @@ root{
 }
 
 body{
-    background-color: aquamarine;
+    background-color: #fff;
+    }
+
+header{
+    background-color: var(--primary-c);
+}
+
+/* only the h1 tag in the nav will get specialized styling  */
+header > h1, h3{
+    background-color: var(--secondary-c);
+    color:var(--primary-c);
+    border-radius: 4px;
+    padding-left: 2vw;
+    padding-right: 5px;
+    display: inline-block;
+}
+
+nav{
+
+}
+
+/* styling the links in the nav */
+nav > a{    
+    color: var(--secondary-c);
+    padding: 0 1%;
+}
+
+section > h2{
+    color: var(--quaternary-c);
+    font-size: 300%;
+    /* padding-right: 2%;
+    border-right: solid 5px var(--quaternary-c); */
+}
+
+#hero{
+    max-width: 90%;
+    max-height: 75%;
+    display: inline-block;
+    /* margin: auto; */
+}
+
+#featuredProject{
+    display: block;
+    margin: auto;
+}
+
+section > img {
+    margin: 0 1%;
+}
+
+footer{
+    background-color: var(--primary-c);
+    color: white;
+    text-align: center;
+    line-height: 5vh;
+}
+
+footer > p {
+    font-weight: bolder;
+    font-size: larger;
 }
